@@ -1,0 +1,5 @@
+SetEnvIf Referer "^http://www\.af5\.jp" Pass
+SetEnvIf Referer "^$" Pass
+order deny,allow
+deny from all
+allow from env=Pass

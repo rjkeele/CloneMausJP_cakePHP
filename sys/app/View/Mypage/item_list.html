@@ -1,0 +1,177 @@
+<?php
+$meta_title = Configure::read('html.mypage');
+$meta_keywords = Configure::read('html.mypage');
+$meta_description = Configure::read('html.mypage');
+
+$this->set('title_for_layout',$meta_title);
+$this->Html->meta('keywords', $meta_keywords, array('inline' => false));
+$this->Html->meta('description', $meta_description, array('inline' => false));
+
+$arrTopicPath[] = array('マイページ' => '/mypage/');
+$arrTopicPath[] = array('デスクトップ' => '');
+$this->set('arrTopicPath',$arrTopicPath);
+
+echo $this->Html->css('/css/main02.css', null, array('inline' => false));
+$this->Html->script('/js/page.js', array('inline' => false));
+$arrSelling = Configure::read('arrSelling');
+$arrPublic = Configure::read('arrPublic');
+
+
+$code_area = <<< EOF
+EOF;
+$this->assign('code_area', $code_area);
+?>
+
+<section>
+  <h2 class="f25 mb20">マイページ</h2>
+  <?php echo $this->Session->flash('auth'); ?>
+  <div class="mypage_row ml20 mr20">
+    <div class="black waku01 mt20">販売者用</div>
+    <table class="table03 mt10 black">
+      <tbody>
+        <tr>
+          <th>商品管理　&#8230;</th>
+          <td><p class="item-p01"><a href="/mypage/item">商品を出品する</a></p></td>
+        </tr>
+        <tr>
+          <th>&nbsp;</th>
+          <td><p class="item-p01"><a href="/mypage/item_list">商品リスト／登録した商品を編集する</a></p></td>
+        </tr>
+        <tr>
+          <th>売上管理　&#8230;</th>
+          <td><p class="item-p01"><a href="/mypage/sales_report">売り上げ状況を確認する</a></p></td>
+        </tr>
+        <tr>
+          <th>&nbsp;</th>
+          <td><p class="item-p01"><a href="/mypage/cashing">換金申請をする</a></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="black waku01 mt50 mb20">商品リスト</div>
+    
+    <div style="margin-top: -10px; margin-bottom:10px; margin-left: -40px;">
+    <?php echo $this->Form->create('CsvUpload',
+    array('id' => 'CsvForm',
+    'class' => 'ml60 spml_0',
+    'url' => '/mypage/csv_upload',
+    'type' => 'file',
+    )); ?>
+    <label style="float:left; margin-right: 15px;">CSVアップロード</label>
+    <input type="file" name="file" onchange="this.form.submit()">
+    
+	</form>
+	</div>
+	
+	<?php if(!$isMobile): ?>
+<?php if(!empty($arrData['list'])): ?>
+    <?php echo $this->Form->create('Mypage', array('url' => 'item_all_del', 'type' => 'post')); ?>
+    <table class="table04">
+      <thead>
+
+		<tr>
+			<td rowspan="2">選択</td>
+			<td rowspan="2">番号</td>
+			<td rowspan="2">画像</td>
+			<td colspan="8">タイトル名</td>
+		</tr>
+		<tr>
+			<td>価格</td>
+			<td>公開</td>
+			<td>状況</td>
+			<td>購入数</td>
+			<td>口コミ</td>
+			<td>編集</td>
+			<td>複製</td>
+			<td>削除</td>
+		</tr>
+      </thead>
+      <tbody>
+<?php foreach($arrData['list'] as $row): ?>
+
+		<tr>
+			<td rowspan="2"><?php echo $this->Form->checkbox('delete_id_' . $row['Item']['id'], array('class' => 'delete-check', 'hiddenField' => false, 'value' => $row['Item']['id'])); ?></td>
+			<td rowspan="2"><?php echo sprintf('%05d', $row['Item']['id']) ?></td>
+
+			<td rowspan="2" class="width100p"><img class="img-responsive" src="<?php echo $this->Upload->uploadUrl($row,'Item.main_image',array('style'=>'list_l')) ?>" alt=""></td>
+			
+			<td colspan="8"><a href="/items/detail/<?php echo $row['Item']['id'] ?>"><?php echo h($row['Item']['title']) ?></a></td>
+		</tr>
+		<tr>
+			<td><?php echo number_format($row['Item']['price']) ?></td>
+			<td <?php if(!$row['Item']['public']) echo 'class="red"' ?>><?php echo @$arrPublic[$row['Item']['public']] ?></td>
+			<td <?php if(!$row['Item']['selling']) echo 'class="red"' ?>><?php echo @$arrSelling[$row['Item']['selling']] ?></td>
+
+			 <td><?php echo number_format($row['Item']['sale_count']) ?></td>
+			 <td><a href="/mypage/review/<?php echo $row['Item']['id'] ?>" class="black">確認</a></td>
+			 <td><a href="/mypage/item/<?php echo $row['Item']['id'] ?>" class="black">編集</a></td>
+			 <td><a href="/mypage/item_copy/<?php echo $row['Item']['id'] ?>">複製</a></td>
+			 <td><a href="/mypage/item_del/<?php echo $row['Item']['id'] ?>">削除</a></td>
+		</tr>
+
+<?php endforeach; ?>
+      </tbody>
+      
+    </table>
+    <div class="form-group" style="margin-top:15px;">
+        <?php echo $this->Form->button('全選択', array('type' => 'button', 'id' => 'select-delete', 'class' => 'btn btn-info btn-sm')); ?>
+        <?php echo $this->Form->button('選択した商品を削除', array('type' => 'submit', 'id' => 'select-delete', 'class' => 'btn btn-warning btn-sm')); ?>
+        <?php echo $this->Form->button('公開', array('type' => 'button', 'id' => 'mypage-select-public', 'class' => 'btn btn-warning btn-sm')); ?>
+        <input type="hidden" id="mypage-public-url" value="/mypage/item_all_public" />
+        <input type="hidden" id="mypage-public-type" name="mypage-public-type" value="-1" />
+        
+        <?php echo $this->Form->button('非公開', array('type' => 'button', 'id' => 'mypage-select-unpublic', 'class' => 'btn btn-warning btn-sm')); ?>
+    </div>
+<?php echo $this->Form->end(); ?>
+<div class="textcenter"><?php echo $this->Paging->list_navi($arrData,$url); ?></div>
+<?php else: ?>
+    <p>該当する商品はありません</p>
+<?php endif; ?>
+<?php endif; ?>
+
+<?php if($isMobile): ?>
+<?php if(!empty($arrData['list'])): ?>
+<?php foreach($arrData['list'] as $row): ?>
+    <table class="table07 mt20">
+      <tbody>
+        <tr>
+          <th class="td_gray">商品番号</th>
+          <td><?php echo sprintf('%05d', $row['Item']['id']) ?></td>
+        </tr>
+        <tr>
+          <td class="td_gray">タイトル名</td>
+          
+        </tr>
+        <tr>
+          <td class="td_gray">販売額</td>
+          <td><?php echo number_format($row['Item']['price']) ?></td>
+        </tr>
+        <tr>
+          <td class="td_gray">状態</td>
+          <td <?php if(!$row['Item']['selling']) echo 'class="red"' ?>><?php echo @$arrSelling[$row['Item']['selling']] ?></td>
+        </tr>
+        <tr>
+          <td class="td_gray">購入数</td>
+          <td><?php echo number_format($row['Item']['sale_count']) ?></td>
+        </tr>
+        <tr>
+          <td class="td_gray">編集</td>
+          <td><a href="/mypage/item/<?php echo $row['Item']['id'] ?>" class="black">編集</a></td>
+        </tr>
+        <tr>
+          <td class="td_gray">削除</td>
+          <td><a href="/mypage/item_del/<?php echo $row['Item']['id'] ?>">削除</a></td>
+        </tr></td>
+      </tbody>
+    </table>
+<?php endforeach; ?>
+
+<div class="textcenter"><?php echo $this->Paging->list_navi($arrData,$url); ?></div>
+
+<?php else: ?>
+    <p>該当する商品はありません</p>
+<?php endif; ?>
+<?php endif; ?>
+
+
+</section>

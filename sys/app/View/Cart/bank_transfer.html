@@ -1,0 +1,47 @@
+<?php
+$meta_title = Configure::read('html.cart');
+$meta_keywords = Configure::read('html.cart');
+$meta_description = Configure::read('html.cart');
+
+$this->set('title_for_layout',$meta_title);
+$this->Html->meta('keywords', $meta_keywords, array('inline' => false));
+$this->Html->meta('description', $meta_description, array('inline' => false));
+
+$this->Html->css('/css/style.css', null, array('inline' => false));
+
+$referer = @$_SERVER["HTTP_REFERER"];
+if(empty($referer) || strpos($referer,'/cart') !== false){
+  $referer = '/item/category';
+}
+
+$arrTopicPath[] = array('商品一覧' => '');
+$this->set('arrTopicPath',$arrTopicPath);
+
+$code_area = <<< EOF
+EOF;
+$this->assign('script_area', $code_area);
+?>
+
+<section>
+  <h2 class="f25 mb40">カート</h2>
+  <h3 class="ml30 mb30 mt40"><span>銀行振込申請は現在受付を行っておりません</span></h3>
+  <h4 class="ml30">クレジットカード決済での決済をお願いいたします。</h4>
+
+
+  <h3 class="ml30 mb30 mt40">クレジット決済が失敗しますか？</h3>
+  <p class="ml30 mb30 mt40">クレジット決済が失敗しますか？<br>
+その場合は、時間がかかりますが、Paypalでの決済が可能です。<br>
+一度お問い合わせください。<br>
+<br>
+Will your credit payment fail?<br>
+In that case, it takes time, but you can pay with Paypal.<br>
+<br>
+Please contact us once.<br>
+<br>
+<br>
+http://dl-mart.com/aboutus/contact<br>
+info@boycolle.com
+
+
+  <p class="ml30 mt50"><a href="<?php echo FULL_BASE_URL ?>">トップページに戻ります</a></p>
+</section>

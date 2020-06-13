@@ -1,0 +1,6 @@
+<Files ~ "\.php$">
+  deny from all
+</Files>
+<Files ~ "(index\.php|install\.php|update_.*\.php)$">
+  allow from all
+</Files>

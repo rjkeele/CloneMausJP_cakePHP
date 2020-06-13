@@ -1,0 +1,34 @@
+<h1 class="page-header">メルマガ配信</h1>
+<?php echo $this->element('alert'); ?>
+<div class="row placeholders">
+    <div class="table-responsive">
+        <?php echo $this->Form->create('Message', array('onsubmit' => 'confirm("メールを送信します。よろしいですか？")')); ?>
+        <table id="main_tbl" class="table table-bordered">
+            <tbody>
+                <tr>
+                    <th align="left">区分</th>
+                    <td align="left">
+                        <select name="type" class="form-control">
+                            <option value="1" selected>メルマガ希望ユーザのみ</option>
+                            <option value="2">全員</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left">件名</th>
+                    <td align="left">
+                        <input type="text" name="subject" class="form-control" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left">内容</th>
+                    <td align="left">
+                        <textarea name="body" class="form-control" rows="20" required></textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="submitButton"><button class="btn btn-lg btn-primary btnW200" type="submit">送信</button></div>
+        <?php echo $this->Form->end(); ?>
+    </div>
+</div>

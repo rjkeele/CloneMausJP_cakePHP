@@ -1,0 +1,457 @@
+/* ============================
+Foundation
+基本のスタイルを整える
+============================ */
+
+/* ルートフォントを10px 1rem=10px */
+html {
+  font-size: 62.5%;
+}
+
+/* 基本のフォントを1.6rem=16px */
+body #eventbody{
+  font-size: 1.6rem;
+  font-family: 'Noto Sans Japanese', sans-serif;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+dl{
+  margin: .5em 0 1em;
+}
+
+ul,li{
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+
+/* サイドバーなし */
+#contents_left,#contents_right {
+display:none;
+}
+
+/* ヘッドラインなし */
+.headline{
+display:none;
+}
+
+
+/* -----------------------------------
+ジーストア構造
+body.basic
+  div#wrapper(940px/auto)
+    div.header(940px)
+    div#contents(930px)
+      div#contents_left(220px)
+      div#maincol(705px)
+        div.inner
+          div#event
+            h1.t_item
+            p.headline
+            div#eventbody
+              div.tuning_event
+          dl.sb
+    div#footer(940px/auto)
+      div.f_menu(940px)
+      div.footer_left
+      div.footer_copy
+----------------------------------- */
+/* -----------------------------------
+コスパ構造
+body
+    div#head(100%)
+    div#container(100%/min1024px/max1260px)
+      div#inner
+        contents_center(100%)
+          div#contents_center_inner
+            div#event
+              h1
+              p.headline
+              div#eventbody
+            dl.sb
+        contents_left(210px)
+        contents_right(190px)
+      ul.go_homenavi
+      div#footer
+----------------------------------- */
+
+/* -----------------------------------
+コスパ
+----------------------------------- */
+
+/* width、背景の指定を解除 */
+#container{
+min-width:0;
+max-width:none;
+background-color: transparent;
+}
+
+/* marginの指定を解除 */
+#contents_center_inner{
+margin:0 auto;
+}
+
+/* ヘッダーとメインコンテンツの間の隙間を削除 */
+#inner{
+padding: 0;
+}
+
+/* -----------------------------------
+ジーストア
+----------------------------------- */
+/* widthの指定を解除 */
+#wrapper{
+width:100%;
+}
+
+/* パディング調整、背景の横棒がはみ出ないように */
+div.header{
+padding:0 5px 10px 5px;
+background-clip: content-box;
+}
+
+/* padding、widthの指定を解除 */
+div#contents{
+padding:0px;
+width:100%;
+}
+
+/* float・padding・widthの指定を解除、marginにautoをつけ中央揃え */
+#maincol {
+float:none;
+padding:0;
+margin:0 auto;
+width:100%;
+}
+
+div#footer{
+margin: 0 auto;
+}
+
+body.basic div#footer,
+body.basic div#footer div.f_menu.clearfix
+{
+width:940px;
+}
+
+/* -----------------------------------
+Maus(TM)
+----------------------------------- */
+
+div#contents_body{
+  float: none;
+  width: 100%;
+  margin:0;
+}
+
+div#container{
+  width: 100%;
+}
+
+#sub_head{
+  width: 770px;
+  margin: 0 auto;
+}
+
+#headimage{
+  width:930px;
+  margin: 0 auto !important;
+}
+
+#sub_head{
+  display: none;
+}
+
+
+/* -----------------------------------
+イベントページ
+----------------------------------- */
+
+/* 背景イメージ（コスパcontents、ジーストアcontainer）
+*/
+#contents,
+#container,
+#contents_center{
+
+}
+
+
+/* */
+
+#headimage img{
+}
+
+/* コンテンツ部分のwidth */
+
+dl.sb
+{
+width:950px;
+margin:0 auto;
+}
+
+/* コンテンツ部分に白背景 */
+div#event{
+  background-color:#FFF;
+  background-image: radial-gradient(rgba(255,216,67,.1) 20%, transparent 20%), radial-gradient(rgba(255,216,67,.1) 20%, transparent 20%);
+  background-size:100px 100px;
+  background-position: 0 0, 50px 50px;
+}
+
+/* コンテンツ部分に余白を作る */
+div#eventbody{
+width:930px;
+margin:0 auto;
+}
+
+/* この情報を共有する */
+dl.sb{
+color:#fff;
+}
+
+/* h2 */
+#eventbody h2{
+  font-size: 2.4rem;
+  position: relative;
+  padding: .5em;
+  background: #fff;
+  border-left:0;
+  margin-bottom:2em;
+  font-weight: bold;
+  border-top: 0;
+}
+
+#eventbody h3{
+  font-size: 2rem;
+  border-left:0;
+  margin: 30px 0 0;
+  font-weight: bold;
+  padding:5px 10px 4px;
+  background: transparent;
+  color:#333;
+}
+
+#eventbody h4{
+   margin:0 0 0 1em;
+     font-weight: bold;
+}
+
+#eventbody h5{
+    font-weight: bold;
+
+   margin:0 0 .5em 1em;
+}
+
+/* 本文 */
+p.entry{
+margin:0 0 1em 1em;
+}
+
+
+#event>h1,
+h1.t_item{
+display: none !important;
+}
+
+#eventbody p.attention{
+color:#990000;
+margin:0 0 1em 1em;
+}
+
+#eventbody section{
+background-color: #FFF;
+border-radius: 10px;
+border: 7px solid #FFF;
+}
+
+#eventbody section div.section_inner{
+padding: 0 40px 40px;
+background: #fff;
+border-radius: 10px;
+border: 8px solid #ffd843;
+}
+
+#eventbody div.section_inner{
+margin: 50px 0;
+}
+
+/*
+-------------------
+コピーライト
+-------------------
+*/
+
+p.small{
+margin-bottom:50px;
+text-align: right;
+}
+
+
+
+/*
+-------------------
+リンクがある画像は全て、マウスホバー明るくする
+-------------------
+*/
+
+#eventbody a img:hover{
+-webkit-filter: brightness(1.1);
+-moz-filter: brightness(1.1);
+-o-filter: brightness(1.1);
+-ms-filter: brightness(1.1);
+filter: brightness(1.1);
+}
+
+
+#eventbody .store_list{
+  margin:.5em 0 1em 1em;
+}
+#eventbody .store_list li{
+  border-left :0;
+  margin:0;
+}
+
+
+
+
+#eventbody .items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body.basic #eventbody .img {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 130px;
+    background: #fff;
+    outline: 1px solid #ccc;
+    font-size: 1.2rem;
+    margin: 0 10px 10px;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.4);
+}
+
+body.basic #eventbody .img p {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    width: 140px;
+    line-height: 1.3;
+}
+
+body.basic #eventbody .img strong {
+    position: absolute;
+    display: block;
+    bottom: 8px;
+    left: 6px;
+    background: #F6F6F6;
+    padding: 3px 6px;
+    width: 202px;
+    text-align: right;
+    font-weight: normal;
+    color: #000;
+}
+
+/*
+-------------------
+店舗
+-------------------
+*/
+
+#eventbody .store_list{
+font-size:1.6rem;
+margin:0 auto 50px auto;
+display:flex;
+flex-wrap: wrap;
+//justify-content: center;
+}
+
+#eventbody .store_list li{
+//border-radius: 5px;
+text-align:center;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 10px 10px 0;
+width: -webkit-calc(100% / 3 - 10px);
+width: calc(100% / 3 - 10px);
+height: 66px;
+background:#F47B00;
+color:#fff;
+border-left: 0;
+//box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.21);
+}
+
+#eventbody .store_list li:hover{
+box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.21) inset;
+background:#0F2B8E;
+  }
+
+@media screen and (max-width: 1000px) {
+  #eventbody .store_list li{
+    width: -webkit-calc(100% / 2 - 30px);
+    width: calc(100% / 2 - 30px);
+  }
+}
+
+#eventbody .store_list li a{
+text-decoration:none;
+color:#fff;
+padding:20px 0;
+display:block;
+width: 100%;
+}
+/*
+-------------------
+メニュー
+-------------------
+*/
+
+#eventbody .p-menuList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#eventbody li{
+  border-left:none;
+}
+
+#eventbody li.p-menuList__item{
+  width: 46%;
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+#eventbody p.p-menuList__title{
+  font-weight: bold;
+}
+
+#eventbody p.p-menuList__price{
+  font-size:14px;
+}
+
+#eventbody p.p-menuList__desc{
+  font-size:14px;
+}
+
+
+
+/*
+-------------------
+utility
+-------------------
+*/
+
+.u-dn-pc{
+display:none;
+}
+
+@media screen and (max-width: 760px) {
+.u-dn-pc{
+display:block;
+}
+}

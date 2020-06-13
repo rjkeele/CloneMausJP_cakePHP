@@ -1,0 +1,142 @@
+#contents_body{
+width: 100%;
+}
+
+#info_body{
+margin:10px;
+text-align:left;
+}
+
+#info_body h1{
+margin:10px 0 !important;
+padding:0px !important;
+border:0 !important;
+}
+
+#info_body p{
+font-size:12px;
+}
+
+#contents div{
+float:left;
+width:250px;
+height:180px;
+margin:0 0 0 25px;
+}
+
+#contents div h2{
+padding:10px 0;
+margin:10px 0;
+border-bottom:1px dotted #669;
+}
+
+#info_member_body{
+text-align: center;
+font-size: 1.0rem;
+font-family:"Noto Sans Japanese";
+text-rendering: optimizeLegibility;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+}
+
+#info_member_body .t_h1basic{
+border:0;
+padding: 0;
+}
+
+#info_member_body .t_h1basic img{
+width:100%;
+}
+
+.t_member h2{
+border-left: 5px solid #ffbe34;
+border-right: 5px solid #ffbe34;
+border-bottom: 1px solid #ccc;
+color: #333;
+font-size: 120%;
+font-weight: bold;
+margin: 0;
+padding: 5px 0 4px 10px;
+}
+
+.t_member p{
+margin:30px;
+}
+
+.meritlist{
+list-style: outside none none;
+display: flex;
+flex-wrap: wrap;
+padding: 0;
+}
+
+.meritlist li{
+width: 40%;
+padding:30px;
+}
+
+.meritlist li.gray{
+background:#f1f1f1;
+}
+
+.meritlist li.long{
+width: 100%;
+}
+
+.meritlist li h3{
+font-size:1.4rem;
+margin:10px 0px 20px;
+font-weight:bold;
+}
+
+.meritlist li p{
+margin:20px 0;
+}
+
+.meritlist li p img{
+margin:10px;
+}
+
+#info_member_body p.b_entry_mem a{
+font-size:2.0rem;
+font-weight:bold;
+margin:0 auto 20px;
+width:70%;
+border:2px solid #f93;
+border-radius: 5px;
+background-color:#f93;
+box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.21);
+color:#fff;
+padding:20px;
+display:block;
+text-decoration:none;
+}
+
+#info_member_body p.b_entry_mem a:hover{
+background-color:#fff;
+color:#f93;
+}
+
+#info_member_body p.red{
+font-size:0.8rem;
+color:#f00;
+margin:0 0 40px 0;
+}
+
+.table_company{
+margin:7px 0 7px;
+width:485px;
+}
+
+.table_company th{
+padding:5px 7px;
+width:120px;
+background:#f1f1f1;
+border:1px solid #ccc;
+font-weight:bold;
+}
+
+.table_company td{
+padding:5px 7px;
+border:1px solid #ccc;
+}

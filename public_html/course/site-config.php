@@ -1,0 +1,1 @@
+<?php ini_set('session.gc_probability','1');ini_set('session.gc_divisor','1');ini_set('session.cookie_lifetime','1209600');ini_set('session.gc_maxlifetime','1209600');require_once('./common/config.ini');

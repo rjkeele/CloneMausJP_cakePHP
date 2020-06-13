@@ -1,0 +1,14 @@
+//「alij」、「epsilon」、「payjp」
+vendor=payjp
+test_flag=1
+
+//alij用
+site_id=59712701
+site_pass=2701ekvg
+
+//epsilon用
+contract_code=65921730
+
+//payjp用
+public_key=pk_test_487886dc6d6d019195472c01
+private_key=sk_test_b12e526be8668cdca643385a

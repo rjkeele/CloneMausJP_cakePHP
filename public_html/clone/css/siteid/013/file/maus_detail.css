@@ -1,0 +1,603 @@
+h1
+
+{
+
+    margin:40px 0 15px 0;
+
+    padding:3px 0 3px 10px;
+
+    font-size:12px;
+
+    text-align:left;
+
+    letter-spacing:2px;
+
+    color:#333;
+
+    line-height:130%;
+
+    border-bottom:1px solid #660000;
+
+}
+
+
+
+#contents_body {
+
+
+
+}
+
+
+
+#iteminfo {
+
+    text-align:left;
+
+    margin:10px;
+
+    position:relative;
+
+}
+
+
+
+#brandlogo
+
+{
+
+    position:absolute;
+
+    right:0;
+
+    top:10px;
+
+}
+
+
+
+#iteminfo p {
+
+    margin:0;
+
+    padding:0;
+
+}
+
+
+
+#iteminfo a {
+
+    color:#333;
+
+    text-decoration:none;
+
+}
+
+
+
+#iteminfo a:hover {
+
+    color:#666;
+
+    text-decoration:underline;
+
+}
+
+
+
+#itemphotos {
+
+    position:relative;
+
+    text-align:center;
+
+    margin:10px 0 10px 0;
+
+}
+
+
+
+span {
+
+    color:#669;
+
+}
+
+
+
+p#info {
+
+    color:#669;
+
+    border-bottom:1px dotted #669;
+
+    padding:0 0 5px 0;
+
+}
+
+
+
+p#comment {
+
+    text-align:left;
+
+    margin:10px; 
+
+    font-size:12px;
+
+}
+
+
+
+/***************************
+
+    商品E淵汽ぅ紺磴ぁО磴ぁ毎
+****************************/
+
+#items {
+
+    
+
+}
+
+
+
+#items h2 {
+
+    font-size:12px;
+
+    padding:3px;
+
+    margin:0; 
+
+    color:#fff;
+
+}
+
+
+
+#items div {
+
+    float:left;
+
+    width:192px;
+
+    margin:0 0 1px 0;
+
+    height:40px;
+
+    border:1px solid #fff;
+
+}
+
+
+
+#items div.active {
+
+    background-color:#ffe;
+
+    border:1px solid #fc9;
+
+}
+
+
+
+#items div h3 {
+
+    font-size:12px;
+
+    margin:0;
+
+    padding:5px 0 0 0;
+
+}
+
+
+
+#items div a {
+
+    color:#333;
+
+}
+
+
+
+#items div a:hover {
+
+    
+
+}
+
+
+
+#items div .img {
+
+    float:left;
+
+    margin:5px 10px 0 5px;
+
+}
+
+
+
+#items div ul {
+
+    margin:3px 0 0 0;
+
+    padding:0;
+
+    list-style:none;
+
+}
+
+
+
+#items div li {
+
+    float:left;
+
+    margin:0 2px 0 0;
+
+}
+
+
+
+
+
+/****************************
+
+    商品情報（コメント・テーブムE毎
+*****************************/
+
+#itemdetail {
+
+    clear:both;
+
+    padding:10px 0;
+
+}
+
+
+
+#itemdetail p
+
+{
+
+    margin:0;
+
+    padding:0;
+
+}
+
+
+
+#itemdetail table {
+
+    width:585px;
+
+    margin-top:20px;
+
+    border-collapse:collapse;
+
+}
+
+
+
+#itemdetail th,#itemdetail td {
+
+    font-size:12px;
+
+    text-align:left;
+
+    letter-spacing:1px;
+
+    border-bottom:1px dotted #669;
+
+    padding:5px;
+
+}
+
+
+
+#itemdetail th {
+
+    white-space:nowrap;
+
+    font-weight:normal;
+
+    color:#669;
+
+    width:130px;
+
+}
+
+
+
+#itemdetail strong
+
+{
+
+    color:red;
+
+}
+
+
+
+/* カートフォームE*/
+
+#cartform {
+
+    text-align:right;
+
+    padding:5px 0 5px 0;
+
+}
+
+
+
+#cartform strong
+
+{
+
+    color:#669;
+
+}
+
+
+
+
+
+/***************************
+
+    商品ステータス
+
+***************************/
+
+.status img {
+
+    margin:0 2px 2px 0;
+
+}
+
+
+
+/***************************
+
+    関連商品
+
+***************************/
+
+.itemlist
+
+{
+
+    clear:both;
+
+    margin:10px 0 20px 0;
+
+}
+
+
+
+.itemlist h2 {
+
+    position:relative;
+
+    font-size:12px;
+
+    margin:0 0 10px 0;
+
+    padding:5px 0;
+
+    color:#333;
+
+    border-bottom:2px solid #660000;
+
+}
+
+
+
+.itemlist div
+
+{
+
+    position:relative;
+
+    float:left;
+
+    width:260px;
+
+    height:150px;
+
+    margin:0 0 15px 15px;
+
+    background:url("../../../../../www.cospa.com/img/geestore/itemlist/bg_itemlist.gif") no-repeat;
+
+    font-size:10px;
+
+}
+
+
+
+.itemlist .saleflag
+
+{
+
+    float:left;
+
+    margin:7px;
+
+}
+
+
+
+.itemlist h3
+
+{
+
+    font-size:10px;
+
+    margin:7px 0 0 0;
+
+    padding:0;
+
+}
+
+
+
+.itemphoto
+
+{
+
+    position:absolute;
+
+    top:35px;
+
+    left:7px;
+
+    border:1px solid #333;
+
+}
+
+
+
+.itemlist samp
+
+{
+
+    position:absolute;
+
+    font-weight:bold;
+
+    color:#f33;
+
+    display:block;
+
+    bottom:7px;
+
+    right:7px;
+
+}
+
+
+
+.itemlist p
+
+{
+
+    position:absolute;
+
+    margin:0;
+
+    padding:0 7px 0 0;
+
+    top:35px;
+
+    left:85px;
+
+    line-height:120%;
+
+}
+
+
+
+.itemlist p a
+
+{
+
+    display:block;
+
+}
+
+
+
+/**
+
+    関連カテゴムE
+**/
+
+#categories ul {
+
+    margin:0 0 0 20px;
+
+    padding:0;
+
+}
+
+
+
+#categories li {
+
+    margin:0;
+
+    padding:0;
+
+}
+
+table.side {
+width:100%;
+margin-bottom:20px;
+border-collapse: collapse;
+}
+
+.side th,.side td {
+font-size:10px;
+letter-spacing:1px;
+padding:5px;
+border:1px solid #000;
+}
+
+.side td em {
+font-style:normal;
+color:#c66;
+}
+
+.side td textarea {
+font-size:12px;
+}
+
+.side th {
+font-size:12px;
+font-weight:normal;
+background-color:#f93;
+text-align:left;
+}
+
+.side th.p_item{
+width:70px;
+text-align:center;
+}
+
+.side th.i_item{
+width:70px;
+}
+
+.side th.r_item{
+width:170px;
+}
+
+.side th.s_item{
+width:50px;
+}
+
+.side th.pr1_item{
+width:80px;
+}
+
+.side th.pr2_item{
+width:80px;
+}
+
+.side th.ctrl_item{
+width:60px;
+}
+
+.side td a {
+color:#333;
+text-decoration:none;
+}
+
+.side td a:hover {
+color:#660000;
+}

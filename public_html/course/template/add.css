@@ -1,0 +1,80 @@
+/*
+Author URI: http://www.af5.jp/
+*/
+/* ------------------style--------------------- */
+body{
+	background: #f9f9f9;
+	color: #474747;
+}
+
+a{
+	color: #0000CC;text-decoration: none;
+}
+a:hover{
+	color: #DA251D; text-decoration: none;
+}
+
+
+/* ------------------Header style-------------------- */
+header {
+	background:#ffffff; margin-bottom:30px;
+}
+
+
+/* ------------------main-content style--------------------- */
+#main-content article h2{
+	font-size:22px; line-height:25px;
+	border-bottom:1px solid #ddd;padding-top: 10px;padding-bottom: 10px;
+}
+
+#main-content .content h3{
+	font-size:22px; line-height:25px; font-weight: bold;
+	margin-top: 10px;margin-bottom: 30px; padding-top: 30px;padding-left: 10px;	border-bottom:3px solid #696969;
+}
+
+#main-content .content ul{
+	list-style-type:square; margin-left:20px;
+}
+#main-content .content ul li{
+	padding:5px;
+}
+
+#main-content .content ol{
+	list-style-type:decimal; margin-left:20px;
+}
+#main-content .content ol li{
+	padding:5px;
+}
+
+
+/* ------------------sidebar style--------------------- */
+#sidebar .heading h2{}
+
+#sidebar .content{}
+#sidebar .content ul{
+	font-size:14px; list-style-type:circle; margin-left:20px;
+}
+#sidebar .content ul li{
+	border-bottom: 1px solid #E1E1E1; padding:5px;
+}
+
+#sidebar .content ol{
+	font-size:14px; list-style-type:decimal-leading-zero; margin-left:20px;
+}
+#sidebar .content ol li{
+	padding:5px;
+}
+
+
+/* ------------------footer style--------------------- */
+footer {
+	background-color:#f9f9f9; margin-top:30px;
+}
+
+.copyright{
+	text-align:center; margin-top:20px; background:#ffffff; padding:10px 0px;color:#545B6B;
+}
+.copyright a{
+	text-decoration:underline; color:#000;
+}
+

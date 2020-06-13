@@ -1,0 +1,138 @@
+/*************************
+	静的ページ各種スタイル
+**************************/
+#contents_body h2 {
+	font-size:14px;
+	color:;
+	border-bottom:1px dotted #ccc;
+	padding:5px 0;
+}
+
+#contents_body h3 {
+	font-size:13px;
+	color:#333;
+	margin:10px 0;
+}
+
+#contents_body p {
+font-size:12px;
+}
+
+#contents_body .inner {
+	margin:10px;
+}
+
+#contents_body table {
+	border-width:0 0 1px 1px;
+	border-style:solid;
+	border-color:#333;
+}
+
+#contents_body th,
+#contents_body td
+{
+	font-size:12px;
+	border-width:1px 1px 0 0;
+	border-style:solid;
+	border-color:#333;
+	padding:10px;
+}
+
+#contents_body th
+{
+	background-color:#eee;
+	color:;
+	white-space:nowrap;
+}
+
+#contents_body p {
+	margin:10px 0;
+	color:#333;
+	line-height:130%;
+}
+
+/***************************
+	 フロート付リスト
+****************************/
+.floatlist {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.floatlist li {
+	float:left;
+	width:200px;
+	font-size:10px;
+	margin-bottom:2px;
+}
+
+
+/***************************
+	 見出し付リスト
+****************************/
+.headinlist {
+	list-style:none;
+	margin:0 0 0 10px;
+}
+
+.headinlist li {
+	margin-bottom:10px;
+}
+
+.headinlist li p {
+	padding:0;
+}
+
+/***************************
+	 通常リスト
+****************************/
+.normallist {
+	
+}
+
+.normallist li {
+	margin-bottom:3px;
+}
+
+.normallist li a {
+	color:#333;
+}
+
+.normallist li a:hover {
+	color:;
+}
+
+/***************************
+	コスパとは？で使う店舗一覧
+****************************/
+#shoplist div {
+	position:relative;
+	margin:40px 0;
+	padding:10px;
+	border:1px solid #666;
+}
+
+#shoplist div h2 {
+	margin:0 0 10px 0;
+	border-bottom:0;
+}
+
+#shoplist div p {
+	margin:5px 0 20px 0;
+}
+
+#shoplist div .photo {
+	float:left;
+	margin:0 10px 10px 0;
+}
+
+#shoplist div div.map {
+	display:none;
+	position:absolute;
+}
+
+#shoplist div p.button {
+	clear:both;
+	margin:5px 0 0 0;
+}

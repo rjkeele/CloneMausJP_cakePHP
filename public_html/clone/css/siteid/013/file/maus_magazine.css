@@ -1,0 +1,45 @@
+#magazine {
+	padding:0 10px 0 10px;
+}
+
+#magazine h2 {
+	font-size:14px;
+	color:#333;
+	margin:10px 0 10px 0;
+}
+
+#magazine p {
+	margin:10px 0 20px 0;
+	line-height:130%;
+	font-size:12px;
+}
+
+#registform {
+	position:relative;
+	border:1px solid #999;
+	background-color:#eee;
+	padding:10px;
+}
+
+#registform .text {
+	background-color:#ffc;
+	ime-mode:inactive;
+}
+
+#registform p {
+	margin:0 0 10px 0;
+	font-size:10px;
+	letter-spacing:1px;
+	color:;
+}
+
+#registform strong {
+	display:block;
+	color:#c33;
+}
+
+#company_body h1.t_sitemap,
+h1.t_sitemap{
+padding:0px;
+border:none;
+}

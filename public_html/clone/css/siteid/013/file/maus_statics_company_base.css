@@ -1,0 +1,107 @@
+#company_body
+{
+    margin:0px;
+    text-align:left;
+}
+
+#company_body h1 
+{
+    margin:10px 0 !important;
+    padding:0px !important;
+    border:0 !important;
+}
+
+#company_body h2
+{
+    color:#669;
+    margin:10px 0;
+}
+
+#company_body h3 
+{
+    color:#333;
+    margin-left:10px;
+}
+
+#company_body div
+{
+    font-size:12px;
+    margin:10px 0 20px 20px;
+    line-height:140%;
+}
+
+#company_body p
+{
+    font-size:12px;
+}
+
+#company_body div.inner_fn,
+div.inner_fn{
+margin:0px 10px;
+}
+#company_body h1.t_sitemap,
+h1.t_sitemap{
+padding:0px;
+border:none;
+}
+
+.sitemap_list{
+margin:0px;
+padding:0px;
+list-style-type:none;
+}
+.sitemap_list ul{
+margin:0px;
+padding:0px;
+list-style-type:none;
+}
+.sitemap_list li{
+margin:0px;
+padding:0px;
+list-style-type:none;
+}
+.sitemap_list li a,
+.sitemap_list li span{
+display:block;
+margin:0px 0px 5px;
+padding:0px 0px 0px 19px;
+background:url("../../../../../www.cospa.com/img/maus/static/sitemap/m_sitemap01.gif") 0 50% no-repeat;
+}
+.sitemap_list li span{
+font-weight:bold;
+}
+.sitemap_list li li{
+margin:0px 0px 3px 20px;
+}
+.sitemap_list li li a{
+background:url("../../../../../www.cospa.com/img/maus/static/sitemap/m_sitemap02.gif") 0 50% no-repeat;
+}
+
+#company_body .t_sitemaph2,
+.t_sitemaph2{
+margin:18px 0px 17px;
+padding:0px 0px 4px;
+border-bottom:1px solid #ccc;
+}
+#company_body .t_sitemaph2 h2,
+.t_sitemaph2 h2{
+margin:0px;
+padding:5px 0px 4px 10px;
+border-left:5px solid #ffbe34;
+font-weight:bold;
+font-size:120%;
+color:#333;
+}
+
+#company_body h3.t_company,
+h3.t_company{
+margin:15px 0px;
+padding:3px 0px 3px 2px;
+border-bottom:1px dotted #ccc;
+font-size:100%;
+}
+.txt_lead{
+margin:0px 0px 25px;
+padding:0px 0px 20px;
+background:url("../../../../../www.cospa.com/img/maus/static/company/line_rules.gif") 0 100% repeat-x;
+}

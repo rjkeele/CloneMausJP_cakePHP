@@ -1,0 +1,57 @@
+#qa {
+	font-size:14px;
+	padding:10px;
+	line-height:150%;
+	letter-spacing:1px;
+}
+
+#qa h2 {
+	font-size:14px;
+	margin:0 0 5px 0;
+	padding:0;
+}
+
+#qa h2 em{
+	font-size:10px;
+	font-style:normal;
+	font-weight:normal;
+	color:#999;
+}
+
+#qa p {
+	margin:10px 0 20px 0;
+}
+
+#qa ul {
+	font-size:14px;
+	margin:0 0 20px 20px;
+	padding:0;
+}
+
+#qa li {
+list-style:none;
+	font-size:12px;
+	letter-spacing:1px;
+	margin:0 0 5px 0;
+	padding:0 0 0 20px;
+	background:url("../../../../../www.cospa.com/img/icons/clip2.gif") no-repeat left;
+}
+
+#qa div.qa_index img {
+float:left;
+}
+
+#qa div.result {
+	background-color:#ffe;
+	border:1px solid #666;
+	padding:10px;
+}
+
+#qa div.result h2 {
+	margin:0;
+}
+
+#qa img{
+margin:0;
+padding:0;
+}

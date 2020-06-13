@@ -1,0 +1,6 @@
+<Files ~ ".*\.php|.*\.ini">
+deny from all
+</Files>
+<Files ~ "(ajax_upload\.php)$">
+  allow from all
+</Files>

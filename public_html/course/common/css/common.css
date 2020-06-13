@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+img{
+max-width:100%;
+height: auto;
+width: auto\9; /* ie8 */
+}
+
+.fs10{font-size:10px!important;font-weight:normal;}
+.fs11{font-size:11px!important;font-weight:normal;}
+.fs12{font-size:12px!important;font-weight:normal;}
+.fs13{font-size:13px!important;font-weight:normal;}
+.fs14{font-size:14px!important;font-weight:normal;}
+.fs15{font-size:15px!important;font-weight:normal;}
+.fs16{font-size:16px!important;font-weight:normal;}
+.fs17{font-size:17px!important;font-weight:normal;}
+.fs18{font-size:18px!important;font-weight:normal;}
+.fs19{font-size:19px!important;font-weight:normal;}
+.fs20{font-size:20px!important;font-weight:normal;}
+.fs21{font-size:21px!important;font-weight:normal;}
+.fs22{font-size:22px!important;font-weight:normal;}
+.fs23{font-size:23px!important;font-weight:normal;}
+.fs24{font-size:24px!important;font-weight:normal;}
+
+.bold{font-weight:bold!important;}
+.orange{color:#ff7902;}
+.green{color:#468847;}
+.red{color:#c40026;}
+
+.waku{
+display:block;
+padding:8.5px;
+margin:0 0 9px;
+font-size:12.025px;
+line-height:18px;
+background-color:#f5f5f5;
+border:1px solid #ccc;
+border:1px solid rgba(0, 0, 0, 0.15);
+-webkit-border-radius:4px;
+-moz-border-radius:4px;
+border-radius:4px;
+overflow:hidden;
+}
+
+

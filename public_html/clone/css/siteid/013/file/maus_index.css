@@ -1,0 +1,154 @@
+/**************************
+    ブランドインフォメーション
+***************************/
+#brandinfo {
+    margin-bottom:10px;
+}
+
+#brandinfo div {
+    clear:both;
+    padding:10px;
+    height:100px;
+    line-height:120%;
+}
+
+#brandinfo h2
+{
+    margin:0 0 10px 0;
+    padding:5px 0;
+    font-size:12px;
+    color:#333;
+    border-top:1px solid ;
+}
+
+#brandinfo h2 em
+{
+    display:none;
+}
+
+#brandinfo p {
+    line-height:150%;
+    color:#666;
+    font-size:12px;
+    margin:0 10px 0 10px;
+    padding:0;
+}
+
+/**************************
+    ニューストピック
+***************************/
+#newtopic {
+    float:left;
+    margin-bottom:5px;
+    width:595px;
+}
+
+/* コンテンツ下側 */
+#contents_bottom {
+    float:left;
+    width: 605px;
+}
+
+/**************************
+    新着アイテム
+***************************/
+#contents_right  {
+    width:160px;
+    float:left;
+/*    background-color:#f3f3f3; */
+/*    border-left:1px dotted #c00; */
+}
+
+#contents_right h2 {
+    margin:0;
+    padding:10px 0;
+}
+
+#contents_right ul {
+    list-style:none;
+    margin:0 0 10px 0;
+    padding:0;
+}
+
+#contents_right li {
+    padding:3px;
+    border-top:1px solid #ccc;
+    clear:both;
+}
+
+#contents_right li img {
+    float:left;
+    margin-right:5px;
+}
+
+#contents_right li p {
+    float:left;
+    margin:0 0 1px 0;
+    padding:0;
+    line-height:120%;
+    letter-spacing:1px;
+}
+
+#contents_right li p strong {
+    color:red;
+}
+
+
+#newlineup h2
+{
+    margin:0 0 10px 0;
+    padding:3px;
+    font-size:12px;
+    font-weight:normal;
+    color:#fff;
+    background-color:#660000;
+    border-bottom:3px solid #cc3300;
+}
+
+#newlineup h2 em
+{
+    display:none;
+}
+
+#newlineup  {
+    width:100%;
+}
+
+#newlineup div {
+    float:left;
+    width:70px;
+    margin:0 2px 2px 0;
+    height:80px;
+    padding:0px;
+    border:1px dotted #cc3300;
+}
+/****
+    リンクバナー
+*****/
+#linkbanners div {
+    position:relative;
+    margin-bottom:5px;
+    text-align:center;
+}
+
+
+/**
+    キャンペーン情報
+**/
+#campaign div h3 {
+    font-size:12px;
+    margin:0;
+    padding:0;
+}
+
+#campaign div {
+    clear:both;
+    border-bottom:1px solid #ccc;
+    height:50px;
+    margin-bottom:5px;
+}
+
+#campaign div img {
+    float:left;
+    margin:0 5px 5px 0;
+}

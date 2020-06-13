@@ -1,0 +1,178 @@
+.itemlist
+{
+    clear:both;
+    margin:10px 0;
+}
+
+.itemlist div
+{
+    position:relative;
+    float:left;
+    width:260px;
+    height:150px;
+    margin:0 0 15px 10px;
+    background:url("../../../../../www.cospa.com/img/geestore/itemlist/bg_itemlist.gif") no-repeat;
+    font-size:10px;
+}
+
+.itemlist .saleflag
+{
+    float:left;
+    margin:7px;
+}
+
+.itemlist h2
+{
+    font-size:10px;
+    margin:7px 0 0 0;
+    padding:0;
+}
+
+.itemphoto
+{
+    position:absolute;
+    top:35px;
+    left:7px;
+    border:1px solid #333;
+}
+
+.itemlist samp
+{
+    position:absolute;
+    font-weight:bold;
+    color:#f33;
+    display:block;
+    bottom:7px;
+    right:7px;
+}
+
+.itemlist p
+{
+    position:absolute;
+    margin:0;
+    padding:0 7px 0 0;
+    top:35px;
+    left:85px;
+    line-height:120%;
+}
+
+.itemlist p a
+{
+    display:block;
+}
+
+/**
+    絞り込み検索フォーム
+**/
+/*
+#search_form {
+
+	border:1px solid tan;
+	background-color: floralwhite;
+	margin: 15px 15px 15px 15px;
+	padding: 5px 5px 5px 5px;
+	font-size:12px;
+}
+
+#search_form th {
+	
+	border:1px solid #999; 
+	background-color:#ffffff; 
+	width:80px; 
+	font-size:12px; 
+	color: ;
+	text-align: left;
+}
+
+#search_form td {
+	
+	//border:1px solid #999; 
+	font-size:12px;
+}
+*/
+/**
+    ページ一覧
+**/
+
+.pages
+{
+    clear:both;
+    position:relative;
+    height:40px;
+}
+
+.pages p
+{
+    margin:0;
+    padding:0;
+}
+
+.pages em 
+{
+    font-weight:bold;
+    color:#f63;
+    font-style:normal;
+}
+
+.pages ul
+{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.pages li
+{
+    float:left;
+    padding:10px 0 7px 10px;
+    margin:0 5px 0 0;
+    background:url("../../../../../www.cospa.com/img/geestore/base/arrow2.gif") no-repeat left;
+}
+
+.pages li.first
+{
+    background:none;
+    padding-left:0;
+}
+
+.pages .next,
+.pages .prev
+{
+    position:absolute;
+    bottom:0px;
+    background:none;
+    text-align:center;
+}
+
+.pages .next a,
+.pages .prev a
+{
+    display:block;
+    height:30px;
+    width:18px;
+}
+
+.pages .next
+{
+    right:10px;
+}
+
+.pages .next a
+{
+    background:url("../../../../../www.cospa.com/img/geestore/itemlist/bt_next.gif") no-repeat center bottom;
+}
+
+.pages .prev
+{
+    right:37px;
+}
+
+.pages .prev a
+{
+    background:url("../../../../../www.cospa.com/img/geestore/itemlist/bt_back.gif") no-repeat center bottom;
+}
+
+.pages li strong
+{
+    text-decoration:underline;
+}

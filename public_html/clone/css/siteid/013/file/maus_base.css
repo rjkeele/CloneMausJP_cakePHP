@@ -1,0 +1,381 @@
+body {
+	font-size:12px;
+	font-family:"ヒラギノ角ゴ Pro W3",メイリオ,"ＭＳ Ｐゴシック",Verdana,sans-serif;
+	color:#222222;
+	background:#FFFFFF;
+	margin:0;
+	padding:0;
+	background-image:url("../../../../../www.geestore.com/project_cospa/_cospa/img/maus/base/headbg.gif");
+	background-repeat: repeat-x;
+}
+
+#top {
+    display:none;
+}
+
+.center,
+.txtc
+{
+    text-align:center;
+}
+
+a {
+    color:#006;
+}
+
+a:hover {
+    color:#f60;
+    text-decoration:none;
+}
+
+
+#contents_left a{
+    text-decoration:none;
+}
+#contents_left a:hover{
+    text-decoration:underline;
+}
+
+a img {
+    border:0;
+}
+
+form {
+    margin:0;
+    padding:0;
+}
+
+#container {
+    text-align:left;
+	margin:0 auto;
+    padding:0;
+    width: 770px;
+}
+
+#inner {
+}
+
+#contents_left,
+#contents_right
+{
+}
+
+h1 {
+    border-left:10px solid #f90;
+    font-size:16px;
+    padding-left:10px;
+}
+
+
+/*********************************
+     ヘッダー
+*********************************/
+#head {
+    position:relative;
+    height:125px;
+}
+
+#head .head_logo{
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+#head .head_character {
+    position:absolute;
+    top:0;
+    left:264px;
+}
+
+#head .head_menu {
+    position:absolute;
+    top:0px;
+    left:502px;
+}
+
+#sub_head {
+    position:relative;
+    height:80px;
+}
+
+#sub_head .info_space{
+    float:left;
+}
+
+#sub_head .banner_space{
+    float:right;
+}
+
+#sub_head #menus
+{
+    height:40px;
+    list-style:none;
+    margin:10px auto;
+    padding:0;
+    clear:both;
+}
+
+#sub_head #menus li
+{
+    float:left;
+    margin-right:7px;
+    height:40px;
+}
+
+
+/*
+    フッター
+*/
+#footer
+{
+    position:relative;
+    background-color:#f90;
+    clear:both;
+    padding:10px;
+    height:50px;
+}
+
+#footer ul
+{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+#footer li
+{
+    float:left;
+    padding:0 0 0 10px;
+    margin-right:10px;
+    background:url("../../../../../www.cospa.com/img/geestore/base/arrow.gif") no-repeat left;
+}
+
+#contents_body address
+{
+    position:relative;
+}
+
+#footer .pagetop
+{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+}
+
+#footer div
+{
+    padding-top:20px;
+    clear:both;
+}
+
+
+
+/****************************
+    サイト内商品検索
+******************************/
+#searchform {
+    position:relative;
+    background-color:#E5EAF0;
+    padding:10px 0;
+    border-bottom:1px dotted #c00;
+}
+
+
+/* コンテンツメイン */
+#contents_body
+{
+    float: left;
+    width:605px;
+    background-color:#fff;
+	margin-left:4px;
+	padding:0px;
+}
+
+#contents_body .inner
+{
+    margin-top:10px;
+	margin-left:0px;
+	padding:0px;
+}
+
+.newsevent
+{
+    margin:0px;
+    padding:0px;
+}
+
+/* コンテンツ左側 */
+#contents_left {
+	float:left;
+	width: 160px;
+/*     border-right:1px dotted #c00; */
+}
+
+#contents_left h2,
+#contents_left h3
+{
+    margin:10px 0 5px 0;
+    padding:0;
+}
+
+#contents_left .inner {
+    margin:0px;
+    background-color:#FFD843;
+    padding-bottom: 5px;
+}
+
+#contents_left .banner,
+#contents_left .qr
+{
+    margin:15px 0 0 0px;
+}
+
+#contents_left .qr {
+    text-align:center;
+}
+
+#contents_left p {
+    margin:0;
+    padding:0;
+}
+
+#contents_left ul
+{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+#contents_left li
+{
+    margin:0 0 1px 0;
+    padding:0;
+}
+
+#banners div {
+    background-color:#FFFFFF;
+    padding-bottom:5px;
+}
+
+#category_titles
+{
+	font-size: 13px;
+	line-height: 160%;
+}
+
+/* ログイン情報 */
+#logged
+{
+    width:130px;
+    margin:10px 10px 10px 5px;
+    font-weight:bold;
+    color:#600;
+    background-color:#FFFFFF;
+    position:relative;
+}
+
+#logged .tooltip2 {
+    position:absolute;
+    left:-7px;
+    line-height:1.5;
+    color:#fff;
+    width:150px;
+    background:#ff9999;
+    border:2px solid #fff;
+    padding:5px;
+    font-size:100%;
+    font-weight:bold;
+    display:block;
+    z-index:999;
+    animation-name:anime;
+    animation-duration:5s;
+    animation-timing-function:ease;
+    animation-iteration-count:1;
+    animation-fill-mode:both;
+}
+
+@keyframes anime {
+    0%{opacity:0;}
+    20%{opacity:0.9;}
+    80%{opacity:0.9;}
+    99%{font-size:100%;}
+    100%{opacity:0;font-size:0;}
+}
+
+
+/*
+    基本テーブル
+*/
+.base_table
+{
+    border:1px solid #333;
+}
+
+.base_table th,
+.base_table td
+{
+    padding:5px;
+    text-align:left;
+}
+
+.base_table th
+{
+    width:200px;
+    background-color:#fc9;
+}
+
+.base_table td
+{
+    background-color:#eee;
+}
+
+
+.go_homenavi{
+clear:both;
+margin:0px;
+padding:30px 10px 5px 10px;
+}
+.go_homenavi li.left{
+float:left;
+list-style-type:none;
+}
+.go_homenavi li.right{
+float:right;
+list-style-type:none;
+text-align:right;
+}
+.go_homenavi li.left a{
+padding:0px 0px 0px 15px;
+background:url("../../../../../www.cospa.com/img/maus/base/m_home_maus.gif") 0 50% no-repeat;
+}
+.go_homenavi li.right a{
+padding:0px 0px 0px 15px;
+background:url("../../../../../www.cospa.com/img/maus/base/m_pagetop_maus.gif") 0 50% no-repeat;
+}
+
+/**************************
+    セッションID
+***************************/
+#sid {
+    display:none;
+}
+
+/**************************
+    クリアフィックス
+***************************/
+.clearfix:after{
+clear:both;
+display:block;
+height:0px;
+visibility:hidden;
+content:".";
+}
+.clearfix{
+display:inline-block;
+}
+* html .clearfix{
+height:1%;
+}
+.clearfix{
+display:block;
+}
